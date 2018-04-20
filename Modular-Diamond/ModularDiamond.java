@@ -31,7 +31,8 @@ public class ModularDiamond {
 	public static void QuadrantOne(String quadrant[][]) {
 		for (int rows = 0; rows <= quadrant[0].length / 2; rows++) {
 			for (int cols = quadrant[0].length - 1; cols >= quadrant[0].length / 2; cols--) {
-				if (rows == quadrant[0].length / 2 || cols == quadrant[0].length / 2 || cols == quadrant[0].length / 2 + rows)
+				if (rows == quadrant[0].length / 2 || cols == quadrant[0].length / 2
+						|| cols == quadrant[0].length / 2 + rows)
 					quadrant[rows][cols] = "*\t";
 				else
 					quadrant[rows][cols] = "\t";
@@ -43,7 +44,8 @@ public class ModularDiamond {
 	public static void QuadrantTwo(String quadrant[][]) {
 		for (int rows = 0; rows <= quadrant[0].length / 2; rows++) {
 			for (int cols = 0; cols <= quadrant[0].length / 2; cols++) {
-				if (rows == quadrant[0].length / 2 || cols == quadrant[0].length / 2 || cols == quadrant[0].length / 2 - rows)
+				if (rows == quadrant[0].length / 2 || cols == quadrant[0].length / 2
+						|| cols == quadrant[0].length / 2 - rows)
 					quadrant[rows][cols] = "*\t";
 				else
 					quadrant[rows][cols] = "\t";
@@ -54,7 +56,8 @@ public class ModularDiamond {
 	public static void QuadrantThree(String quadrant[][]) {
 		for (int rows = quadrant[0].length / 2; rows < quadrant[0].length; rows++) {
 			for (int cols = 0; cols <= quadrant[0].length / 2; cols++) {
-				if (rows == quadrant[0].length / 2 || cols == quadrant[0].length / 2 || rows == cols + quadrant[0].length / 2)
+				if (rows == quadrant[0].length / 2 || cols == quadrant[0].length / 2
+						|| rows == cols + quadrant[0].length / 2)
 					quadrant[rows][cols] = "*\t";
 				else
 					quadrant[rows][cols] = "\t";
