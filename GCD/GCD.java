@@ -19,11 +19,4 @@ public class GCD{
             return second;
         return findGCDEuclidean(second % first, first);
     }
-
-    public static int findGCDEuclidean2(int first, int second){
-        if(second == 0)
-            return first;
-        return findGCDEuclidean(first, second % first);
-    }
-
 }
